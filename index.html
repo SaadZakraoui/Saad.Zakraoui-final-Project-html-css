@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HerRights</title>
-    <link rel="stylesheet" href="public/css/output.css">
-    <link rel="stylesheet" href="public/css/app.css">
+
+    <title>HerRights - Accueil</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+            background: linear-gradient(120deg, #fff0f8, #f3dafa, #ffe9e5);
+        }
+
+        .purple-gradient {
+            background: linear-gradient(90deg, #4b087e, #8318a5);
+        }
+    </style>
 </head>
 
 <body class="bg-[#fff7fc] text-[#35105c]">
+
+
+
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
         <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="#" class="text-3xl font-extrabold">
@@ -30,25 +53,68 @@
                 </a>
             </div>
             <a href="#mission"
-                class="hidden md:block purple-gradient text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
-
-                En savoir plus →
-            </a>
-
-            <button class="md:hidden text-3xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                class="  purple-gradient text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition flex justify-center items-center ">
+                En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M4 6l16 0" />
-                    <path d="M4 12l16 0" />
-                    <path d="M4 18l16 0" />
+                    <path d="M5 12l14 0" />
+                    <path d="M15 16l4 -4" />
+                    <path d="M15 8l4 4" />
                 </svg>
+            </a>
+            <button class="md:hidden text-3xl">
+                ☰
             </button>
         </nav>
     </header>
+    <section class="relative overflow-hidden bg-[#35105c] text-white bg-[url(./public/images/image.png)] bg-cover bg-center bg-no-repeat min-h-screen">
+        <div class="max-w-7xl mx-auto px-6 py-16 md:py-20 grid md:grid-cols-2 items-center gap-10">
 
+            <div class="relative z-10">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-[#623366]">
+                    HerRights -
+                    <br>
+                    Raise Your Voice.
+                    <br>
+                    Shape Your Future.
+                </h1>
+                <p class="text-[#623366] text-lg mb-8">
+                    Together, we build a safer,
+                    stronger and more equal society.
+                </p>
+                <a href="#mission"
+                    class="w-fit bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-bold transition flex justify-center items-center">
+                    Learn More <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 12l14 0" />
+                        <path d="M15 16l4 -4" />
+                        <path d="M15 8l4 4" />
+                    </svg>
+                </a>
+            </div>
+            
+        </div>
 
+        <div class="max-w-3xl mx-auto px-6 pb-12">
+            <div class="bg-white rounded-full p-2 flex items-center shadow-xl">
+                <input type="text" placeholder="Search for legal advice..."
+                    class="flex-1 px-5 py-3 outline-none text-gray-700 bg-transparent">
+                <button class="bg-orange-500 text-white w-12 h-12 rounded-full hover:bg-orange-600 flex items-center justify-center" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
