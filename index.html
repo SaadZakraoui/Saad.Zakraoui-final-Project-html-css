@@ -4,14 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>HerRights - Accueil</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -32,16 +28,17 @@
 </head>
 
 <body class="bg-[#fff7fc] text-[#35105c]">
-
-
-
+    <!-- NAVBAR -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
-        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="#" class="text-3xl font-extrabold">
+        <nav class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl md:text-3xl font-extrabold shrink-0">
                 🦋 Her<span class="text-orange-500">Rights</span>
             </a>
-            <div class="hidden md:flex items-center gap-9 font-semibold">
-                <a href="#" class="text-purple-800 hover:text-orange-500">Accueil</a>
+            
+            <div class="hidden lg:flex items-center gap-6 xl:gap-9 font-semibold text-sm xl:text-base">
+                <a href="#" class="text-purple-800 hover:text-orange-500">
+                    Accueil
+                </a>
                 <a href="#droits" class="hover:text-orange-500">
                     Connaître vos droits
                 </a>
@@ -52,64 +49,74 @@
                     Contactez-nous
                 </a>
             </div>
+            
             <a href="#mission"
-                class="  purple-gradient text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition flex justify-center items-center ">
-                En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 12l14 0" />
-                    <path d="M15 16l4 -4" />
-                    <path d="M15 8l4 4" />
-                </svg>
+                class="hidden lg:flex purple-gradient text-white px-5 py-3 rounded-full font-semibold hover:scale-105 transition items-center gap-2">
+                En savoir plus
             </a>
-            <button class="md:hidden text-3xl">
-                ☰
-            </button>
+          
+            <details class="relative lg:hidden">
+                <summary class="list-none cursor-pointer text-3xl text-purple-900">
+                    ☰
+                </summary>
+                <div
+                    class="absolute right-0 top-12 w-64 bg-white shadow-xl rounded-2xl p-5 flex flex-col gap-5 font-semibold">
+                    <a href="#" class="hover:text-orange-500">
+                        Accueil
+                    </a>
+                    <a href="#droits" class="hover:text-orange-500">
+                        Connaître vos droits
+                    </a>
+                    <a href="#mission" class="hover:text-orange-500">
+                        Assistance
+                    </a>
+                    <a href="#contact" class="hover:text-orange-500">
+                        Contactez-nous
+                    </a>
+                    <a href="#mission" class="purple-gradient text-white text-center px-4 py-3 rounded-full">
+                        En savoir plus
+                    </a>
+                </div>
+            </details>
         </nav>
     </header>
+    
     <section
-        class="relative overflow-hidden bg-[#35105c] text-white bg-[url(./public/images/image.png)] bg-cover bg-center bg-no-repeat min-h-screen">
-        <div class="max-w-7xl mx-auto px-6 py-16 md:py-20 grid md:grid-cols-2 items-center gap-10">
-
+        class="relative overflow-hidden bg-[#35105c] text-white bg-[url(public/images/image.png)] bg-cover bg-center bg-no-repeat min-h-162.5 md:min-h-screen">
+        <div class="max-w-7xl mx-auto px-5 md:px-6 py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
             <div class="relative z-10">
-                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-[#623366]">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-[#623366]">
                     Her <span class="text-orange-500">Rights</span> -
                     <br>
                     Raise Your Voice.
                     <br>
                     Shape Your Future.
                 </h1>
-                <p class="text-[#623366] text-lg mb-8">
+                <p class="text-[#623366] text-base md:text-lg mb-8">
                     Together, we build a safer,
                     stronger and more equal society.
                 </p>
                 <a href="#mission"
-                    class="w-fit bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-bold transition flex justify-center items-center">
-                    Learn More <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    class="w-fit bg-orange-500 hover:bg-orange-600 px-7 md:px-8 py-3 rounded-full font-bold transition flex justify-center items-center gap-2 text-white">
+                    Learn More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12l14 0" />
                         <path d="M15 16l4 -4" />
                         <path d="M15 8l4 4" />
                     </svg>
                 </a>
             </div>
-
         </div>
-
-        <div class="max-w-3xl mx-auto px-6 pb-12">
+       
+        <div class="max-w-3xl mx-auto px-5 md:px-6 pb-12">
             <div class="bg-white rounded-full p-2 flex items-center shadow-xl">
                 <input type="text" placeholder="Search for legal advice..."
-                    class="flex-1 px-5 py-3 outline-none text-gray-700 bg-transparent">
+                    class="min-w-0 flex-1 px-4 md:px-5 py-3 outline-none text-gray-700 bg-transparent text-sm md:text-base">
                 <button
-                    class="bg-orange-500 text-white w-12 h-12 rounded-full hover:bg-orange-600 flex items-center justify-center">
+                    class="shrink-0 bg-orange-500 text-white w-11 h-11 md:w-12 md:h-12 rounded-full hover:bg-orange-600 flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
                         <path d="M21 21l-6 -6" />
                     </svg>
@@ -117,9 +124,10 @@
             </div>
         </div>
     </section>
-
-    <section class="max-w-6xl mx-auto px-6 -mt-2 relative z-10 py-5">
-        <div class="bg-white rounded-3xl shadow-lg p-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+   
+    <section class="max-w-6xl mx-auto px-4 md:px-6 relative z-10 py-5">
+        <div
+            class="bg-white rounded-3xl shadow-lg p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
             <div>
                 <h3 class="text-lg font-bold mb-3">
                     Statistics
@@ -131,7 +139,7 @@
                     Community Impact
                 </p>
             </div>
-            <div class="md:border-x border-purple-100">
+            <div class="sm:border-l md:border-x border-purple-100">
                 <h3 class="text-lg font-bold mb-3">
                     Community Safety
                 </h3>
@@ -155,21 +163,21 @@
             </div>
         </div>
     </section>
-    <section
-        class="relative w-full min-h-screen bg-[#fff1df] bg-[url(/public/images/femme.png)] bg-cover bg-left bg-no-repeat flex items-center">
-
-        <div class="w-1/2 ml-auto px-10 md:px-16">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-[#35105c] mb-6">
+   
+    <section id="mission"
+        class="relative w-full min-h-162.5 md:min-h-screen bg-[#fff1df] bg-[url(/public/images/femme.png)] bg-cover bg-left bg-no-repeat flex items-center">
+        <div class="w-full md:w-1/2 ml-auto px-6 md:px-10 lg:px-16 py-16 md:py-10 bg-[#fff1df]/70 md:bg-transparent">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#35105c] mb-6">
                 Our Mission
             </h2>
-            <p class="text-gray-700 leading-8 mb-8 text-lg">
+            <p class="text-gray-700 leading-8 mb-8 text-base md:text-lg">
                 We empower women through knowledge,
                 education and legal support.
                 Our mission is to protect women's rights
                 and create a safer and more equal society.
             </p>
             <a href="#contact"
-                class="w-fit bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-bold transition flex items-center gap-2 text-white">
+                class="w-fit bg-orange-500 hover:bg-orange-600 px-7 md:px-8 py-3 rounded-full font-bold transition flex items-center gap-2 text-white">
                 Learn More
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -179,36 +187,50 @@
             </a>
         </div>
     </section>
-    <section class="bg-[#f5d9b8] py-10">
-        <h2 class="text-3xl font-extrabold text-center mb-12">
-            <span class="text-orange-600">O</span>ur <span class="text-orange-600">I</span>mpact
-        </h2>
-        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
 
+    <section class="bg-[#f5d9b8] py-12 md:py-16">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">
+            <span class="text-orange-600">O</span>ur
+            <span class="text-orange-600">I</span>mpact
+        </h2>
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
             <div>
-                <h3 class="text-3xl font-extrabold">342,533</h3>
-                <p class="text-sm">Community Impact</p>
+                <h3 class="text-3xl font-extrabold">
+                    342,533
+                </h3>
+                <p class="text-sm">
+                    Community Impact
+                </p>
             </div>
             <div>
-                <h3 class="text-3xl font-extrabold">25+</h3>
-                <p class="text-sm">Support Programs</p>
+                <h3 class="text-3xl font-extrabold">
+                    25+
+                </h3>
+                <p class="text-sm">
+                    Support Programs
+                </p>
             </div>
             <div>
-                <h3 class="text-3xl font-extrabold">25%</h3>
-                <p class="text-sm">Women Equality</p>
+                <h3 class="text-3xl font-extrabold">
+                    25%
+                </h3>
+                <p class="text-sm">
+                    Women Equality
+                </p>
             </div>
         </div>
     </section>
-
-    <section class="max-w-7xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-extrabold text-center mb-12">
-            <span class="text-orange-600">L</span>atest <span class="text-orange-600">C</span>ommunity <span
-                class="text-orange-600">N</span>ews
+    
+    <section class="max-w-7xl mx-auto px-4 md:px-6 py-14 md:py-20">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10 md:mb-12">
+            <span class="text-orange-600">L</span>atest
+            <span class="text-orange-600">C</span>ommunity
+            <span class="text-orange-600">N</span>ews
         </h2>
-        <div class="grid md:grid-cols-3 gap-8">
-
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+           
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-2 transition">
-                <img src="public/images/image copy 3.png" alt="Women's Rights" class="w-full h-52 object-cover">
+                <img src="public/images/image copy 3.png" alt="Women's Rights" class="w-full h-52 md:h-56 object-cover">
                 <div class="p-5">
                     <h3 class="font-bold text-lg mb-3">
                         Women's Rights Awareness
@@ -219,9 +241,9 @@
                     </p>
                 </div>
             </div>
-
+          
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-2 transition">
-                <img src="public/images/image copy 2.png" alt="Women's Support" class="w-full h-52 object-cover">
+                <img src="public/images/image copy 2.png" alt="Women's Support" class="w-full h-52 md:h-56 object-cover">
                 <div class="p-5">
                     <h3 class="font-bold text-lg mb-3">
                         Steps Towards Empowerment
@@ -232,9 +254,9 @@
                     </p>
                 </div>
             </div>
-
+            <!-- CARD 3 -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-2 transition">
-                <img src="public/images/image copy.png" alt="Legal Support" class="w-full h-52 object-cover">
+                <img src="public/images/image copy.png" alt="Legal Support" class="w-full h-52 md:h-56 object-cover">
                 <div class="p-5">
                     <h3 class="font-bold text-lg mb-3">
                         Legal Support
@@ -246,13 +268,13 @@
                 </div>
             </div>
         </div>
+        <!-- BUTTON -->
         <div class="text-center mt-10">
-            <a href="#" class="bg-orange-500 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition  flex
-                justify-center items-center gap-1">
-                Learn More <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <a href="#"
+                class="w-fit mx-auto bg-orange-500 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition flex justify-center items-center gap-2">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12l14 0" />
                     <path d="M15 16l4 -4" />
                     <path d="M15 8l4 4" />
@@ -260,12 +282,13 @@
             </a>
         </div>
     </section>
+    <!-- FOOTER -->
     <footer id="contact" class="bg-[#35105c] text-white">
-        <div class="max-w-7xl mx-auto px-6 py-12">
-            <div class="grid md:grid-cols-4 gap-10">
+        <div class="max-w-7xl mx-auto px-5 md:px-6 py-10 md:py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
                 <div>
                     <h2 class="text-2xl font-extrabold mb-4">
- 🦋 Her<span class="text-orange-500">Rights</span>
+                        🦋 Her<span class="text-orange-500">Rights</span>
                     </h2>
                     <p class="text-purple-200 text-sm">
                         Raise Your Voice.
@@ -273,21 +296,35 @@
                     </p>
                 </div>
                 <div>
-                    <h3 class="font-bold mb-4  hover:text-orange-500">Home</h3>
-                    <p class="text-purple-200 text-sm">Our Mission</p>
-                    <p class="text-purple-200 text-sm">Latest News</p>
-                </div>
-                <div>
-                    <h3 class="font-bold mb-4  hover:text-orange-500">Support</h3>
-                    <p class="text-purple-200 text-sm">Legal Help</p>
-                    <p class="text-purple-200 text-sm">Protection</p>
-                </div>
-                <div>
-                    <h3 class="font-bold mb-4 hover:text-orange-500">Contact Us</h3>
-                    <p class="text-purple-200 text-sm">
-                        Rabat, Morocco
+                    <h3 class="font-bold mb-4 hover:text-orange-500">
+                        Home
+                    </h3>
+                    <p class="text-purple-200 text-sm mb-2">
+                        Our Mission
                     </p>
                     <p class="text-purple-200 text-sm">
+                        Latest News
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 hover:text-orange-500">
+                        Support
+                    </h3>
+                    <p class="text-purple-200 text-sm mb-2">
+                        Legal Help
+                    </p>
+                    <p class="text-purple-200 text-sm">
+                        Protection
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 hover:text-orange-500">
+                        Contact Us
+                    </h3>
+                    <p class="text-purple-200 text-sm mb-2">
+                        Rabat, Morocco
+                    </p>
+                    <p class="text-purple-200 text-sm wrap-break-word">
                         support@herrights.org
                     </p>
                 </div>
@@ -299,10 +336,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
 </body>
 
 </html>
